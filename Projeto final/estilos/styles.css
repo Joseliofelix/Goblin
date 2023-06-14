@@ -1,0 +1,165 @@
+/* Estilos gerais */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    margin: 0;
+}
+
+h1 {
+    color: white;
+}
+
+/* Estilos do cabeçalho */
+.valorant_cabecario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+}
+
+.valorant_navs1 {
+    display: flex;
+    gap: 10px;
+    padding-left: 200px;
+    
+}
+.valorant_navs2 {
+    display: flex;
+    gap: 10px;
+    padding-right: 200px;
+    
+}
+
+.valorant_navs1 a,
+.valorant_navs2 a {
+    color: aliceblue;
+}
+
+/* Estilos do cartão de crédito */
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card-container {
+    width: 100%;
+    height: 200px;
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.back {
+    transform: perspective(1000px) rotateY(180deg);
+}
+
+.image {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.card-number-box {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-holder-name {
+    font-size: 16px;
+}
+
+.expiration {
+    display: flex;
+    gap: 5px;
+}
+
+.exp-month,
+.exp-year {
+    font-size: 14px;
+}
+
+.stripe {
+    height: 40px;
+    background-color: #000;
+    margin-bottom: 10px;
+}
+
+.cvv-box {
+    width: 40px;
+    height: 25px;
+    border: 1px solid #000;
+    margin-bottom: 10px;
+}
+
+/* Estilos do formulário */
+.inputBox {
+    margin-bottom: 15px;
+}
+
+.inputBox span {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.month-input,
+.year-input {
+    width: calc(50% - 5px);
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos das últimas notícias */
+.ultimas_noticias{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.video_inicio {
+    display: flex;
+    justify-content: center;
+}
+
+.lgo {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
